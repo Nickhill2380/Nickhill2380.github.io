@@ -61,6 +61,29 @@ footer {
     color: firebrick;
 }
 
+.run-buddy {
+    background-image: url(../images/hero-bg.jpg);
+    height: 150px;
+    width: 150px;
+}
+
+.horiseon {
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/digital-marketing-meeting.jpg);
+}
+
+
+.project:hover {
+    height: 200px;
+    width: 200px;
+}
+.contact-me p {
+    margin: 20px 0;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
 .logo {
     height: 5%;
     width: 5%;
