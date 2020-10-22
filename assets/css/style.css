@@ -49,3 +49,24 @@ header nav ul li a:hover {
 footer {
     text-align: center;
 }
+
+.title {
+    font-style: italic;
+    border-bottom: 1px solid yellowgreen;
+    margin: 50px auto;
+} 
+
+.info p{
+    text-align: center;
+    color: firebrick;
+}
+
+.logo {
+    height: 5%;
+    width: 5%;
+}
+
+.logo:hover {
+    height: 7%;
+    width: 7%;
+}
