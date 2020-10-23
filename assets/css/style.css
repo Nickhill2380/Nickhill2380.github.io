@@ -1,10 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
+
+:root {
+    --primary-color: rgb(255, 51, 44);
+    --secondary-color: rgb(66, 50, 205);
+    }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: slategray;
 }
 
 header {
@@ -14,13 +21,19 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 9999;
-    background-color: rgb(178, 230, 59);
-    color: rgb(66, 50, 205);
+    color: var(--secondary-color);
 }
 
 header h1 {
     font-weight: bold;
     margin: 0;
+    font-size: 46px;
+   
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -33,17 +46,16 @@ header nav ul {
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 header nav ul li a {
     padding: 10px 15px;
-
 }
 
 header nav ul li a:hover {
     border-radius: 15px;
-    background: chocolate;
+    background: var(--primary-color);
 }
 
 footer {
@@ -52,31 +64,47 @@ footer {
 
 .title {
     font-style: italic;
-    border-bottom: 1px solid yellowgreen;
+    border-bottom: 2px solid var(--secondary-color);
     margin: 50px auto;
+    text-align: center;
+    width: 120px;
 } 
 
 .info p{
     text-align: center;
-    color: firebrick;
+    color: var(--primary-color);
+}
+
+.current-projects {
+    display: flexbox;
+    flex-wrap: wrap;
 }
 
 .run-buddy {
-    background-image: url(../images/hero-bg.jpg);
-    height: 150px;
-    width: 150px;
+    background-image: url(../images/run-buddy.png);
+    height: 100%;
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
 }
 
 .horiseon {
-    height: 100px;
-    width: 100px;
-    background-image: url(../images/digital-marketing-meeting.jpg);
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/horiseonseo.png);
+    display: flexbox;
+    flex-wrap: wrap;
 }
 
+.project-title, .project-subtitle {
+    margin-top: auto;
+    display: flexbox;
+    flex-wrap: wrap;
+}
 
 .project:hover {
-    height: 200px;
-    width: 200px;
+    height: 200%;
+    width: 200%;
 }
 .contact-me p {
     margin: 20px 0;
@@ -92,4 +120,30 @@ footer {
 .logo:hover {
     height: 7%;
     width: 7%;
+}
+
+.project-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-grid-container{
+    display:grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4, 4fr);
+}
+
+.grid-item {
+    padding: 15px 0;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.grid-item.recent {
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 2;
 }
