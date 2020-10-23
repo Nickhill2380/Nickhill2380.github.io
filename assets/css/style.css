@@ -97,24 +97,35 @@ h2 {
 
 .run-buddy {
     background-image: url(../images/run-buddy.png);
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
     
 }
 
 .horiseon {
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px; 
     background-image: url(../images/horiseonseo.png);
     display: flex;
     flex-wrap: wrap;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
     
+}
+
+.placeholder-project {
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .project-title, .project-subtitle {
@@ -151,35 +162,36 @@ h2 {
     color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
-    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
 }
 
 .logo {
-    height: 5%;
-    width: 5%;
+    height: 100x;
+    width: 200px;
+    align-self: center;
 }
 
 .logo:hover {
-    height: 7%;
-    width: 7%;
+    height: 200px;
+    width: 400px;
 }
 
 .project-grid-wrapper {
     display: flex;
     width: 100%;
     justify-content: center;
-}
+  }
 
-.project-grid-container{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2fr repeat(3, 1fr);
-    margin: 100px;
-    
-}
+.project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 1.2rem;
+} 
 
 .grid-item {
     padding: 15px 25px;
@@ -189,3 +201,18 @@ h2 {
     text-align: center;
 } 
 
+.recent {
+    grid-column-start: 1 / span 2;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
