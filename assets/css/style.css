@@ -156,7 +156,7 @@ h2 {
 }
 
 .contact-info {
-    margin: 20px 0;
+    margin: 20px auto;
     font-size: 20px;
     padding-bottom: 20px;
     color: var(--primary-color);
@@ -167,6 +167,7 @@ h2 {
     text-decoration: none;
     background-color: var(--secondary-color);
     border-radius: 15px;
+    width: 50%;
 }
 
 .logo {
