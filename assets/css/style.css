@@ -188,35 +188,6 @@ h2 {
     width: 400px;
 }
 
-/*
-.project-grid-wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    
-  }
-
-.project-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    font-size: 1.2rem;
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-.grid-item {
-    padding: 15px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} 
-
-.grid-item.grid-place {
-    grid-column-end: -1;
-} */
-
 @media screen and (max-width: 980px) {
 
 }
@@ -226,5 +197,27 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .profile-pic {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%
+    }
+
+    .contact-info {
+        font-size: 15px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 100px;
+    }
 
 }
