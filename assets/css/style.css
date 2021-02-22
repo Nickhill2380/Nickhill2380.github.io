@@ -133,12 +133,13 @@ h2 {
 
 .run-buddy {
     background-image: url(../images/run-buddy.png);
-    width: 60%;
-    height: 400px;
+   
 }
 
 .something-special {
     background-image: url(../images/something-special.png);
+    width: 60%;
+    height: 400px;
 }
 
 .dungeons-end {
