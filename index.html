@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Hill's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    
 </head>
 <body>
     <header>
-        <h1>Nick Hill</h1>
+        <h1><a href="index.html">Nick Hill</a></h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#about-Me">About Me</a>
+                    <a href="./about-me.html#about-me">About Me</a> 
                 </li>
                 <li>
-                    <a href="#current-projects">Current Projects</a>
+                    <a href="./index.html#current-projects">Current Projects</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="./about-me.html#contact-me">Contact Me</a>
                 </li>
             </ul>
         </nav>
@@ -29,21 +31,10 @@
 
     </section>
 
-    <section id="about-me" class="info">
-        <h2 class="title">About Me</h2>    
-        <div class="me">
-            
-         <img src="assets/images/profile-pic.jpg" class="profile-pic" alt="Nick Hill hanging out on his lanai"/>
-        <p>
-            Welcome to my porfolio. I am currently taking part in a coding boot camp with UCF. I will keep this page updated with the latest and greatest things I'm working on. I am 33 years old and currently live with my two dogs in Southwest Florida. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid laborum id suscipit consequatur quam qui cumque a blanditiis architecto ea. Sed illum quo, delectus animi corrupti accusantium? Magni, perferendis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, reprehenderit? Nulla vitae a, quas enim deserunt aperiam eos nisi beatae eius officia voluptates consectetur numquam accusantium? Earum ullam unde sunt?  
-        </p>
-        </div>
-    </section>
-
     <section id="current-projects">
         <h2 class="title"> Current Projects</h2>
-        <div class="project-grid-wrapper">
-            <div class="project-grid-container">
+        <div class="grid">
+            <div class="grid-item">
                 <article class="projects"></article>
                 <a href="https://something-special2380.herokuapp.com/"><div class="something-special project grid-item recent">
                     <h3 class="project-title">
@@ -74,25 +65,6 @@
         </div>
     </section>
 
-    <section id="contact-me">
-        <h2 class="title">Contact Me</h2>    
-        <p class="contact-info">
-            Phone: 555-555-5555
-        </p>
-
-        <p class="contact-info">
-            Email: <a href="mailto:nickhill2380@gmail.com">NickHill2380@gmail.com</a>
-        </p>
-
-        <p class="contact-info">
-            <a href="https://github.com/Nickhill2380"><img src="./assets/images/GitHub_Logo.png" class="logo" alt="Github"></a>
-        </p>
-
-        <p class="contact-info">
-            <a href="https://www.linkedin.com/in/nick-hill-04357677/"><img src="./assets/images/LI-Logo.png" class="logo" alt="Linkedin"></a>
-        </p>
-    </section>
-    
     <footer>
         <p>
         Made By Nick Hill
@@ -100,4 +72,5 @@
     </footer>
 
 </body>
+<script src="/path/to/masonry.pkgd.min.js"></script>
 </html>
