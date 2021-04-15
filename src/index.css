@@ -231,3 +231,9 @@ h2 {
   background-size: cover;
   background-position: center;
 }
+
+.directEmail {
+  text-decoration: none;
+  text-align: center;
+  color: var(--secondary-color);
+}

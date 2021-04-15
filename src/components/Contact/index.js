@@ -65,6 +65,7 @@ function ContactForm() {
       <h2>Contact me</h2>
       <div id="contact-container">
       <img id="desktop" src={desktop} alt="Nick's desktop"></img>
+      
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -85,6 +86,9 @@ function ContactForm() {
         )}
         <button type="submit">Submit</button>
       </form>
+      </div>
+      <div className="directEmail">
+       <a href = "mailto: nickhill2380@gmail.com">Email: NickHill2380@gmail.com</a>
       </div>
     </section>
   );
