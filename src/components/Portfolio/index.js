@@ -3,13 +3,20 @@ import special from '../../assets/images/something-special.png';
 import dungeon from '../../assets/images/dungeonsend.png';
 import notes from '../../assets/images/note-taker.png';
 import work from '../../assets/images/work-day-scheduler.png';
-import tech from '../../assets/images/tech-blog.png';
+import food from '../../assets/images/food-baby.png';
 import budget from '../../assets/images/budget-tracker.png';
 import Project from '../Project/index.js';
 
 function Portfolio() {
 
     const [projects] = useState([
+        {
+            name: "Food Baby",
+            description: "Group three Project, restaurant template with notifications and an owner dashboard.",
+            photo:food,
+            url: "https://food-babycmnw.herokuapp.com/",
+            github: "https://github.com/Nickhill2380/food-baby"
+        },
         {
             name: 'Something Special',
             description: 'Group two Project, Online Community for selling, renting and buying used event items',
@@ -44,14 +51,7 @@ function Portfolio() {
             photo: budget,
             url: "https://budget-tracker2380.herokuapp.com/",
             github: "https://github.com/Nickhill2380/budget-tracker"
-        },
-        {
-            name: "Tech Blog",
-            description: "Allows users to post articles and comment on existing articles after logging in.",
-            photo:tech,
-            url: "https://tech-blog2380.herokuapp.com/",
-            github: "https://github.com/Nickhill2380/tech-blog"
-        }
+        }   
     ])
 
     return (
